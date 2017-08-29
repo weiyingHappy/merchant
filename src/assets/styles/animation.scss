@@ -1,0 +1,31 @@
+.fade {
+  &-enter {
+    opacity: 0;
+    transition: all .4s ease-out;
+    position: absolute;
+    width: 100%;
+    top: 0;
+  }
+  &-leave {
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    &-active {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      opacity: 0;
+      transition: all .4s ease-out;
+    }
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
